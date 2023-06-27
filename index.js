@@ -27,9 +27,9 @@ app.post('/usuarios', async (req, res) => {
 
     await nuevoUsuario.save();
 
-    /* res.json({
-        msg: 'Usuario creado correctamente'
-    }); */
+    res.json({
+        saludo: 'Dato guardado'
+    }); 
 })
 
 app.get('/clientes', async (req, res) => {
@@ -41,8 +41,8 @@ app.get('/clientes', async (req, res) => {
 
     console.log(personas);
 
-    let miDia = new Date().getDate();
-    console.log(miDia);
+    /* let miDia = new Date().getDate();
+    console.log(miDia); */
 
     res.json({
         personas
